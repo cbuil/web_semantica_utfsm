@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html prefix=" 
+	foaf: http://xmlns.com/foaf/0.1/    
+	rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#     
+	rdfs: http://www.w3.org/2000/01/rdf-schema#    
+	dbpedia: http://dbpedia.org/resource/
+	ex:http://www.example.com/
+	dbowl: http://dbpedia.org/ontology/"
+  xmlns="http://www.w3.org/1999/xhtml">
+  
+  <!--dc: http://purl.org/dc/elements/1.1/-->
+  <head>
+    <meta charset="windows-1252" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <title>Alonso Sandoval</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body style="width: 738px;">
+    <div id="container" style="margin-left: 40px;">
+	
+	 <!-- Datos Alonso -->
+	  <div about="http://alumnos.inf.utfsm.cl/~asandova/" typeof="foaf:Person" style="margin-left: 80px;"> 
+      <h1 property="foaf:name" class="title" style="text-align: left;"> Alonso Sandoval</h1>
+	  <h3>About Me</h3>
+	  
+	  <span class="left" ><strong>ID:</strong></span>
+	  <a href="http://alumnos.inf.utfsm.cl/~asandova/">http://alumnos.inf.utfsm.cl/~asandova/</a>
+	  (I contain RDFa)
+	  
+      <div class="section none"><strong>email:</strong>
+	  <span property="foaf:mbox">asandova@inf.utfsm.cl</span>
+	  </siv>
+	  
+	  <!-- Editado -->
+	  <!--#1-->
+	  <div><strong>Birth Date:</strong>
+	  <span property="rdfs:birthDate" datatype="xsd:date" content="1992-03-16">16 de Marzo de 1992</span>
+	  </div>
+	   <!--#2-->
+	  
+	   <div>
+	   <div rel="rdfs:birthPlace" resource="http://dbpedia.org/page/Valpara%C3%ADso">
+	   <strong>Birth Place:</strong>Valparaíso</div>
+	   </div>
+	   
+	   <div>
+	   <div rel="rdfs:nationality" resource="http://dbpedia.org/page/Chile">
+	   <strong>Nationality:</strong>Chilean</div>
+	   </div>
+	   
+	   <!--#5-->
+	  <div><strong>Gender:</strong>
+	  <span property="rdfs:gender">Male</span>
+	  </div>
+	  
+	  <!--#3-->
+	  <div><strong>Telephone:</strong>
+	  <span property="rdfs:telephone" content="84952163">+56 9 84952163</span>
+	  </div>
+	  <!--#4-->
+	  <div><strong>Job:</strong>
+	  <span property="rdfs:jobTitle">Game Developer</span>
+	  </div>
+	  <p></p>
+	  <p property="rdfs:comment"> 
+	  I'am student of Universidad Técnica Federico Santa María. 
+	  I interesting in learn about Semantic Web.</p>
+	  
+      <p property="rdfs:comment"> 
+	  I'm interested in Semantic web technologies, databases and logic.</p>
+	  
+	  
+
+	  </div>
+	  
+	   <hr style="margin-left: 80px;" />
+	  
+	  <!-- Hobbies  Sections -->
+      <h2>Hobbies: </h2>
+	  <h3>Favorites books</h3>
+	  <ul>
+        <ul>
+          <li>
+		  <a href ="https://en.wikipedia.org/wiki/Les_Mis%C3%A9rables">Les Misérables</a> of Victor Hugo, 
+			is a French historical novel by Victor Hugo, first published in 1862, 
+			that is considered one of the greatest novels of the 19th century.
+		  <div about= "http://dbpedia.org/page/Les_Mis%C3%A9rables" typeof= "rdfs:Book">
+		  <div rel= "rdfs:author" resource= "http://dbpedia.org/page/Victor_Hugo"></div>
+		  <div property= "rdfs:genre" content= "Epic novel, historical fiction"></div>
+		  <div about= "ex:releaseDate" typeof= "rdfs:Property"></div>
+		  <div property= "ex:releaseDate" content= "1862"></div>
+		  </div>
+          </li>
+		   <li>
+		  <a href ="https://en.wikipedia.org/wiki/Narcissus_and_Goldmund">Narcissus amd Goldmund</a> 
+		     is a novel written by the German–Swiss author Hermann Hesse which was first published in 1930. 
+			 At its publication, Narcissus and Goldmund was considered Hesse's literary triumph; chronologically, 
+			 it follows <a href ="https://en.wikipedia.org/wiki/Steppenwolf_(novel)">Steppenwolf</a>.
+		  <div about= "http://dbpedia.org/page/Narcissus_and_Goldmund" typeof= "rdfs:Book">
+		  <div rel= "rdfs:author" resource= "http://dbpedia.org/page/Herman_Hesse"></div>
+		  <div property= "rdfs:genre" content= "Philosophical and Historical fiction"></div>
+		  <div property= "rdfs:releaseDate" content= "1932"></div>
+		  <div about= "ex:previousWork" typeof= "rdfs:Property"></div>
+		  <div rel= "ex:previousWork" resource= "http://dbpedia.org/page/Steppenwolf_(novel)"></div>
+		  </div>
+          </li>
+		   <li>
+		  <a href ="https://en.wikipedia.org/wiki/The_Name_of_the_Rose">The Name of The Rose (Il Nome della Rosa), </a>
+		   is the 1980 debut novel by Italian author Umberto Eco. It is a historical murder mystery set in an 
+		   Italian monastery, in the year 1327, an intellectual mystery combining semiotics in fiction, 
+		   biblical analysis, medieval studies, and literary theory. 
+		   It was translated into English by William Weaver in 1983.
+		  <div about= "http://dbpedia.org/page/The_Name_of_the_Rose" typeof= "rdfs:Book">
+		  <div rel= "rdfs:author" resource= "http://dbpedia.org/page/Umberto_Eco"></div>
+		  <div property= "rdfs:genre" content= "Mystery and Historical fiction"></div>
+		  <div property= "rdfs:releaseDate" content= "1980"></div>
+		  <div rel= "rdfs:translator" resource= "http://dbpedia.org/page/William_Weaver"></div>
+		  </div>
+          </li>
+        </ul>
+      </ul>
+	  
+	  <h3>Favorite Painter</h3>
+	  <ul>
+        <ul>
+          <li>
+		  <a href ="https://en.wikipedia.org/wiki/Claudio_Bravo_(painter)">Claudio Bravo</a> 
+		  was a Chilean hyperrealist painter. He was greatly influenced by Renaissance and Baroque artists, 
+		  as well as Surrealist painters such as <a href="https://en.wikipedia.org/wiki/Salvador_Dal%C3%AD">Salvador Dalí</a>. 
+		  <div about= "http://dbpedia.org/page/Claudio_Bravo_(painter)" typeof= "rdfs:Person">
+		  <div property= "rdfs:jobTitle" content= "Painter"></div>
+		  <div rel= "dbowl:movement" resource= "http://dbpedia.org/page/Hyperreality"></div>
+		  <div rel= "dbowl:influencedBy" resource= "http://dbpedia.org/page/Salvador_Dal%C3%AD"></div>
+		  <div rel= "rdfs:nationality" resource= "http://dbpedia.org/page/Chile"></div>
+		  </div>
+          </li>
+        </ul>
+      </ul>
+	  
+      <div style="margin-left: 80px;"> 
+	  </div>
+	 
+    
+	  
+	    <!-- Other Sections -->
+      
+    <div style="margin-left: 120px;"> </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
